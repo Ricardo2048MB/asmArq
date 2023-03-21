@@ -1,0 +1,1 @@
+ml "%userprofile%\Documents\ARITMETCONPROCS.ASM" /Fe "%userprofile%\Documents\ARITMETCONPROCS.EXE" /link kernel32.lib user32.lib /subsystem:console

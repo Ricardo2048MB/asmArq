@@ -1,0 +1,6 @@
+en AH siempre se ponen los servicios
+INT 10H
+
+AL ;ES EL MODO DE PANTALLA (QUÉ MODO DE PANTALLA QUIERES)
+
+
