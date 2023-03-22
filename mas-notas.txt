@@ -1,6 +1,26 @@
-en AH siempre se ponen los servicios
+En AH siempre se ponen los servicios. (Servicio 1, servicio 2, servicio 9…)
 INT 10H
-
 AL ;ES EL MODO DE PANTALLA (QUÉ MODO DE PANTALLA QUIERES)
 
+22 de marzo de 2023
 
+Los servicios de la interrupción 21 que más hemos usado en clase son, el 1, el 2, y el 9.
+
+El servicio 1 es para guardar el código ASCII de la tecla que pulses (ver una tabla ASCII). Éste servicio 
+requiere que pongas un número 1 en AH (parte alta del registro AX). La salida, o resultado que obtienes 
+al ejecutar la interrupción es el código ASCII de la tecla que hayas pulsado en el momento que te lo pide la 
+computadora. Tal resultado se guarda en AL (parte baja del registro AX). Hay que recordar que cuando pulsas la tecla, esta hará eco en la pantalla.
+
+El servicio 2 de esta interrupción imprime un caracter cuyo código ASCII se encuentre guardado en DL (Parte baja del registro DX). Así que para que este servicio funcione correctamente, se requiere que tengas el número ASCII del caracter que quieras 
+imprimir en pantalla, guardado en DL.
+
+Entonces, serervicios 1 y 2 son sólo para caracteres, no cadenas.
+
+El servicio 9 sirve para imprimir una cadena que termine en el símbolo "$". Ese símbolo le sirve a la computadora para saber 
+que es en ese símbolo en donde debe terminar de imprimir los caracteres de la cadena. Ese servicio va a empezar a imprimir 
+cada caracter y al encontrar "$" no lo va a imprimir y además se va a detener después de imprimir el que estaba antes de "$".
+Las precondiciones del servicio 9 dicen que DS:DX debe apuntar a la cadena antes mencionada. Eso quiere decir que DS (Data segment, o sea segmento de datos en español) indica el inicio del segmento de datos [En la metáfora usada por el profe Romero, sería el número de salón] y DX indica la localidad exacta donde se haya la cadena [siguiendo la metáfora del profe, la localidad sería el asiento en donde está el alumno].
+
+El OFFSET es la distancia, medida en bytes, entre el inicio del segmento de memoria y la ubicación específica dentro del segmento. [En la metáfora podría decirse que sería cuántos asientos debes contar para encontrar a un alumno en concreto].
+
+A veces el profe no escribe ".EXIT" sino que solamente mueve un 4CH A AH y ejeccuta la interrupción 21. El servicio 4C sirve para finalizar el programa, es el equivalente de .EXIT
