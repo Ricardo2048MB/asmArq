@@ -1,4 +1,6 @@
-# asmArq
+# Lenguaje ensamblador en MASM
+## UNITEC
+### Pero en realidad estudiamos de manera independiente un poquito. La neta jaja.
 Éste es un repositorio para contener diferentes versiones de lo que vemos en clase para poder jugar con las características de los programas y ver qué novedades se pueden descubrir.
 
 Aquí se van guardando los programas que vamos compilando bien para tener un respaldo.
