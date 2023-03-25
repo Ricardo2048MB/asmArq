@@ -12,3 +12,4 @@
 24 de marzo de 2023 14:36 : Acabo de subir el último programa que vimos (el del martes 21 de marzo de 2023). Para que funcione bien se debe definir el procedimiento que falta.
 
 25 de marzo de 2023: Ya están los archivos vistos la clase de ayer (viernes). Los archivos se llaman _TEST.ASM_, _BIBLIO.ASM_, _TESTH.ASM_, Y _BIBLIOH.ASM_.
+25 de marzo de 2023 16:02 : Ya están comentados los de imprimir en decimal.
