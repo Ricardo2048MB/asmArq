@@ -13,3 +13,5 @@
 
 25 de marzo de 2023: Ya están los archivos vistos la clase de ayer (viernes). Los archivos se llaman _TEST.ASM_, _BIBLIO.ASM_, _TESTH.ASM_, Y _BIBLIOH.ASM_.
 25 de marzo de 2023 16:02 : Ya están comentados los de imprimir en decimal.
+
+29 de marzo de 2023 11:55 : Ya estoy al corriente con todos los programas, pero todavía no entiendo la interrupción 10h servicio 6h. Actualicé NEWMIX.ASM y BIBLIO.ASM
